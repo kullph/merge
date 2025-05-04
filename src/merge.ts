@@ -71,10 +71,6 @@ const isAscAscDescPattern = (...args: number[][]) => {
   return false
 };
 
-const isAllAscCollections = (...args: number[][]) => {
-  return args.every(arr => isAsc(arr));
-}
-
 function reverseIfDesc(...collections: number[][]): number[][] {
   return collections.map(arr =>
     isDesc(arr) ? arr.reverse() : arr
