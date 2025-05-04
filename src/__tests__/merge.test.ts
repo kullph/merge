@@ -2,7 +2,7 @@ import { merge } from "../merge";
 
 describe("merge", () => {
     describe("Basic functionality", () => {
-        it("merge and sort asc three given collection in the problem", () => {
+        it("merge and sort asc three given collection (ASC,ASC,DESC)", () => {
             const collection_1 = [0, 1, 3];
             const collection_2 = [4, 5, 6];
             const collection_3 = [23, 12, 8];
@@ -100,7 +100,7 @@ describe("merge", () => {
     })
     
     describe("Large scale data", () => {
-        it("merge and sort asc three large collections of 2 asc 1 desc", () => {
+        it("merge and sort asc three large given collection (ASC,ASC,DESC)", () => {
             const collection_1 = Array.from({ length: 10000 }, (_, i) => i + 1);
             const collection_2 = Array.from({ length: 10000 }, (_, i) => i + 10001);
             const collection_3 = Array.from({ length: 10000 }, (_, i) => 30000 - i);
