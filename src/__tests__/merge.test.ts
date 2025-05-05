@@ -212,26 +212,26 @@ describe("merge", () => {
         });
     });
 
-    describe("Performance test with random data (using random data so i need to use built-in sort method to ensure the right expect which is not allowed)", () => {
-        it('merge and sort asc three large collections of random numbers', () => {
-            const collection_1 = Array.from({ length: 10000 }, () => Math.floor(Math.random() * 10000));
-            const collection_2 = Array.from({ length: 10000 }, () => Math.floor(Math.random() * 10000));
-            const collection_3 = Array.from({ length: 10000 }, () => Math.floor(Math.random() * 10000));
+    // describe("Performance test with random data (using random data so i need to use built-in sort method to ensure the right expect which is not allowed)", () => {
+    //     it('merge and sort asc three large collections of random numbers', () => {
+    //         const collection_1 = Array.from({ length: 10000 }, () => Math.floor(Math.random() * 10000));
+    //         const collection_2 = Array.from({ length: 10000 }, () => Math.floor(Math.random() * 10000));
+    //         const collection_3 = Array.from({ length: 10000 }, () => Math.floor(Math.random() * 10000));
 
-            const result = merge(collection_1, collection_2, collection_3);
+    //         const result = merge(collection_1, collection_2, collection_3);
 
-            expect(result).toEqual([...collection_1, ...collection_2, ...collection_3].sort((a, b) => a - b)) // using built-in sort function which is not allowed (personal use for performance testing)
-        });
+    //         expect(result).toEqual([...collection_1, ...collection_2, ...collection_3].sort((a, b) => a - b)) // using built-in sort function which is not allowed (personal use for performance testing)
+    //     });
 
-        it('merge and sort asc three large collections of random number with length differentiation', () => {
-            const collection_1 = Array.from({ length: 10000 }, () => Math.floor(Math.random() * 10000));
-            const collection_2 = Array.from({ length: 20000 }, () => Math.floor(Math.random() * 10000));
-            const collection_3 = Array.from({ length: 30000 }, () => Math.floor(Math.random() * 10000));
+    //     it('merge and sort asc three large collections of random number with length differentiation', () => {
+    //         const collection_1 = Array.from({ length: 10000 }, () => Math.floor(Math.random() * 10000));
+    //         const collection_2 = Array.from({ length: 20000 }, () => Math.floor(Math.random() * 10000));
+    //         const collection_3 = Array.from({ length: 30000 }, () => Math.floor(Math.random() * 10000));
 
-            const result = merge(collection_1, collection_2, collection_3);
+    //         const result = merge(collection_1, collection_2, collection_3);
 
-            expect(result).toEqual([...collection_1, ...collection_2, ...collection_3].sort((a, b) => a - b)) // using built-in sort function which is not allowed (personal use for performance testing)
-        });
-    })
+    //         expect(result).toEqual([...collection_1, ...collection_2, ...collection_3].sort((a, b) => a - b)) // using built-in sort function which is not allowed (personal use for performance testing)
+    //     });
+    // })
 });
 

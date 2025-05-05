@@ -37,12 +37,4 @@ The source code for unit tests is located in [`src/__tests__/merge.test.ts`](src
       √ throws error when called with less than 3 argument (2 ms)                                                                                                                                                                           
       √ throws error when called with more than 3 arguments (1 ms)                                                                                                                                                                          
       √ throws error when called with undefined or null (1 ms)                                                                                                                                                                              
-    Performance test with random data (using random data so i need to use built-in sort method to ensure the right expect which is not allowed)                                                                                             
-      √ merge and sort asc three large collections of random numbers (115 ms)                                                                                                                                                               
-      √ merge and sort asc three large collections of random number with length differentiation (232 ms)                                                                                                                                    
-                                                                                                                                                                                                                                            
-Test Suites: 1 passed, 1 total                                                                                                                                                                                                              
-Tests:       21 passed, 21 total                                                                                                                                                                                                            
-Snapshots:   0 total
-Time:        2.755 s
 ```
